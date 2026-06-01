@@ -8,7 +8,7 @@ import {
   industrialFate,
   labReports,
   lifeTimeline,
-  missionStats,
+  courtyardLegacy,
   ourGoals,
   products,
   readyToCookDefaults,
@@ -76,31 +76,47 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 使命区 */}
+        {/* 一座院子的三十年 */}
         <section id="mission" className="bg-rice scroll-mt-16">
           <div className="section-inner section-pad">
-            <header className="mb-16 max-w-2xl md:mb-24">
-              <p className="eyebrow">使命</p>
+            <header className="mb-16 max-w-2xl md:mb-20">
+              <p className="eyebrow">岁月</p>
               <h2 className="heading-section mb-8">
-                让更多鸡
-                <br />
-                重新回到阳光下
+                {courtyardLegacy.title}
               </h2>
-              <div className="space-y-6 body-prose">
-                <p>我们的目标不是卖出更多鸡蛋。</p>
-                <p className="text-brown/80">
-                  我们的目标是让更多生命离开鸡笼，回到院子。
-                </p>
+              <div className="space-y-2 body-lead">
+                {courtyardLegacy.subtitle.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
               </div>
             </header>
-            <dl className="mission-stats">
-              {missionStats.map((stat) => (
-                <div key={stat.label}>
-                  <dd className="mission-stat-value">{stat.value}</dd>
-                  <dt className="mission-stat-label">{stat.label}</dt>
-                </div>
+            <p className="yard-legacy-prelude">{courtyardLegacy.prelude}</p>
+            <div className="yard-legacy-list">
+              {courtyardLegacy.items.map((item) => (
+                <article key={item.label} className="yard-legacy-item">
+                  <p className="yard-legacy-value">{item.value}</p>
+                  <p className="yard-legacy-label">{item.label}</p>
+                  <div className="yard-legacy-note">
+                    {item.note.map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
+                  </div>
+                </article>
               ))}
-            </dl>
+            </div>
+            <div className="yard-legacy-epilogue">
+              {courtyardLegacy.epilogue.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+            </div>
+            <p className="yard-legacy-closing">
+              {courtyardLegacy.closing.map((line, i) => (
+                <span key={line}>
+                  {i > 0 ? <br /> : null}
+                  {line}
+                </span>
+              ))}
+            </p>
           </div>
         </section>
 

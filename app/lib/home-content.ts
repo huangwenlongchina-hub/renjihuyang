@@ -28,17 +28,47 @@ export const todayJournal = {
 
 
 
-export const missionStats = [
-
-  { label: "只被善待的鸡", value: "2,200" },
-
-  { label: "个支持家庭", value: "30" },
-
-  { label: "座鸡院子", value: "1" },
-
-  { label: "枚安心鸡蛋", value: "72,000" },
-
-] as const;
+export const courtyardLegacy = {
+  title: "一座院子的三十年",
+  subtitle: ["有些坚持，", "需要用几十年去完成。"],
+  prelude: "从一座老房子开始",
+  epilogue: [
+    "这些数字记录的不是产量。",
+    "而是一个院子与一群生命共同度过的岁月。",
+  ],
+  closing: ["人以岁月护其生", "鸡以金汤报其诚"],
+  items: [
+    {
+      value: "30年",
+      label: "守护鸡群",
+      note: ["从阿英开始照顾第一批鸡算起。"],
+    },
+    {
+      value: "3,200只",
+      label: "被善待的鸡",
+      note: [
+        "统计三十年来，",
+        "在这座院子里生活过、成长过、",
+        "产蛋过、带过小鸡的母鸡与公鸡。",
+        "不是当前存栏量。",
+        "是三十年的累计生命数量。",
+      ],
+    },
+    {
+      value: "92,000枚",
+      label: "安心鸡蛋",
+      note: [
+        "来自拥有阳光、土地与家庭的母鸡。",
+        "统计三十年累计产出。",
+      ],
+    },
+    {
+      value: "30个",
+      label: "支持家庭",
+      note: ["目前已经加入人鸡互养计划的家庭。"],
+    },
+  ],
+} as const;
 
 
 

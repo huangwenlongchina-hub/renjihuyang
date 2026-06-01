@@ -246,16 +246,36 @@ body::after {
     @apply mx-auto max-w-xl border-t border-brown/[0.08] pt-16 text-center md:pt-20;
   }
 
-  .mission-stats {
-    @apply grid grid-cols-2 gap-x-8 gap-y-14 border-t border-brown/[0.06] pt-14 md:grid-cols-4 md:gap-y-16 md:pt-20;
+  .yard-legacy-prelude {
+    @apply mb-20 text-center text-[11px] tracking-[0.4em] text-brown/35 md:mb-28;
   }
 
-  .mission-stat-value {
-    @apply mb-3 text-2xl font-medium tracking-[0.04em] text-gold/90 md:text-[1.75rem];
+  .yard-legacy-list {
+    @apply mx-auto max-w-xl divide-y divide-brown/[0.06] border-y border-brown/[0.06];
   }
 
-  .mission-stat-label {
-    @apply text-[11px] leading-[2] tracking-[0.28em] text-brown/45;
+  .yard-legacy-item {
+    @apply py-14 md:py-20;
+  }
+
+  .yard-legacy-value {
+    @apply mb-3 text-2xl font-medium tracking-[0.06em] text-brown/90 md:text-[1.85rem];
+  }
+
+  .yard-legacy-label {
+    @apply mb-8 text-sm tracking-[0.28em] text-brown/55;
+  }
+
+  .yard-legacy-note {
+    @apply space-y-3 text-[0.875rem] leading-[2.25] text-brown/50 md:text-[0.9375rem];
+  }
+
+  .yard-legacy-epilogue {
+    @apply mx-auto mt-20 max-w-lg space-y-4 text-center text-sm leading-[2.4] tracking-[0.08em] text-brown/45 md:mt-28 md:text-base;
+  }
+
+  .yard-legacy-closing {
+    @apply mt-20 border-t border-brown/[0.06] pt-16 text-center text-lg font-medium leading-[1.75] tracking-[0.1em] text-gold/85 md:mt-28 md:pt-20 md:text-xl;
   }
 
   .life-timeline {
