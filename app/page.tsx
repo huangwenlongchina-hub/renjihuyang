@@ -46,15 +46,14 @@ export default function Home() {
                 <p className="mb-12 text-[10px] tracking-[0.5em] text-white/55">
                   人鸡互养
                 </p>
-                <h1 className="mb-12 text-4xl font-medium leading-[1.12] tracking-[0.02em] md:text-5xl lg:text-[3.25rem]">
+                <h1 className="mb-10 text-4xl font-medium leading-[1.12] tracking-[0.02em] md:mb-12 md:text-5xl lg:text-[3.25rem]">
                   用鸡院子
                   <br />
                   取代鸡笼子
                 </h1>
-                <div className="mb-10 text-lg leading-[2.15] text-white/88 md:text-xl">
-                  鸡部落文明
-                  <br />
-                  与长期安心的食物
+                <div className="mb-12 text-lg leading-[2.2] text-white/88 md:mb-14 md:text-xl md:leading-[2.15]">
+                  <p>让每一只鸡拥有阳光、土地与家庭</p>
+                  <p className="mt-4">让每一个家庭拥有长期安心的食物</p>
                 </div>
                 <div className="mb-16 text-base leading-[2.25] text-dawn/95 md:text-lg">
                   我们不只是卖鸡蛋。

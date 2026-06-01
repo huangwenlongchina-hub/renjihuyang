@@ -30,13 +30,13 @@ export const todayJournal = {
 
 export const missionStats = [
 
-  { label: "已加入家庭", value: "30" },
+  { label: "只被善待的鸡", value: "2,200" },
 
-  { label: "被善待的鸡", value: "2,200" },
+  { label: "个支持家庭", value: "30" },
 
-  { label: "累计安心鸡蛋", value: "72,000" },
+  { label: "座鸡院子", value: "1" },
 
-  { label: "已支持鸡院", value: "1" },
+  { label: "枚安心鸡蛋", value: "72,000" },
 
 ] as const;
 
