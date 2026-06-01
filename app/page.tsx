@@ -60,9 +60,12 @@ export default function Home() {
                   <br />
                   我们希望让更多鸡离开鸡笼，重新回到阳光下。
                 </div>
-                <div className="flex justify-center">
-                  <Link href="#mission" className="btn-quiet-light">
-                    从一顿早餐开始
+                <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+                  <Link href="#courtyard" className="btn-quiet-light">
+                    了解鸡院子
+                  </Link>
+                  <Link href="#subscribe" className="btn-quiet-light">
+                    加入阳光早餐计划
                   </Link>
                 </div>
               </div>
@@ -104,7 +107,7 @@ export default function Home() {
         <div className="section-rest bg-cream" aria-hidden />
 
         {/* 两种命运 */}
-        <section className="grid min-h-0 grid-cols-1 md:grid-cols-2">
+        <section id="courtyard" className="grid min-h-0 scroll-mt-16 grid-cols-1 md:grid-cols-2">
           <div className="flex items-center bg-brown px-8 py-28 text-white md:px-16 md:py-36 lg:px-20">
             <div className="max-w-xl">
               <p className="eyebrow text-white/30">两种命运</p>
